@@ -1,0 +1,29 @@
+{
+  "name": "insignia-test-be",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "includedScripts": [],
+  "sourceRoot": "src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "buildTarget": "insignia-test-be:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "insignia-test-be:build:development"
+        },
+        "production": {
+          "buildTarget": "insignia-test-be:build:production"
+        }
+      }
+    }
+  }
+}
