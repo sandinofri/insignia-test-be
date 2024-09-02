@@ -36,7 +36,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["e2e/**/*"]
+      "exclude": ["e2e/**/*", "api-e2e/**/*"]
     }
   ]
 }
